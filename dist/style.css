@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+html,
+body {
+  overflow: visible;
+}
+
+#container {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1.5rem 1rem 1rem;
+  overflow: visible;
+}
+
+#title {
+  font: 700 1.7rem/2rem roboto;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+#description {
+  font: 500 1rem/2rem roboto;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+#author {
+  text-align: center;
+  margin-top: 0.1rem;
+}
+#author p {
+  font: 400 0.7rem/1rem roboto;
+  letter-spacing: 6px;
+  color: black;
+}
+#author p a:link {
+  text-decoration: none;
+  color: #28d7b8;
+}
+#author p a:visited {
+  text-decoration: none;
+  color: #28d7b8;
+}
+#author p a:hover {
+  text-decoration: none;
+  color: #d72847;
+}
+#author p a:active {
+  text-decoration: none;
+  color: #31837a;
+}
+
+heading {
+  margin-bottom: 1rem;
+}
+
+#tooltip {
+  position: absolute;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  border-radius: 10px;
+  width: 150px;
+  padding: 8px;
+  text-align: center;
+  color: #fff;
+  font: 400 0.9rem/1.2rem roboto;
+  box-shadow: 4px 4px 10px #444;
+  pointer-events: none;
+}
+
+#svgDiv {
+  width: 100%;
+}
+#svgDiv #scrollbox svg {
+  align-self: flex-start;
+  position: relative;
+  overflow: scroll;
+}
+
+.cell {
+  outline: none;
+  border: none;
+}
+
+#y-axis,
+#x-axis,
+.y-legend,
+.x-legend {
+  font: 400 0.8rem/1rem roboto;
+}
+
+#legendAxis {
+  font: 400 0.7rem/1rem roboto;
+}
+
+.y-legend,
+.x-legend {
+  letter-spacing: 3px;
+}
+
+#legendContainer {
+  padding: 1rem 5rem;
+  align-self: flex-start;
+}
